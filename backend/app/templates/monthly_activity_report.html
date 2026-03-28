@@ -1,0 +1,35 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Monthly Placement Activity Report</title>
+  </head>
+  <body style="font-family: Arial, sans-serif;">
+    <h2>Institute Placement Activity Report</h2>
+    <p>Month: {{ month_label }}</p>
+
+    <h3>Overview</h3>
+    <table style="border-collapse: collapse; width: 100%;" border="1">
+      <tr>
+        <th>Metric</th>
+        <th>Value</th>
+      </tr>
+      <tr>
+        <td>Drives conducted</td>
+        <td>{{ drives_conducted }}</td>
+      </tr>
+      <tr>
+        <td>Students applied</td>
+        <td>{{ students_applied }}</td>
+      </tr>
+      <tr>
+        <td>Students selected</td>
+        <td>{{ students_selected }}</td>
+      </tr>
+    </table>
+
+    <h3>Generated On</h3>
+    <p>{{ generated_on }}</p>
+  </body>
+</html>
+

@@ -1,0 +1,24 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Daily Placement Reminder</title>
+  </head>
+  <body style="font-family: Arial, sans-serif;">
+    <h2>Placement Portal - Reminder</h2>
+    <p>Hi {{ full_name }},</p>
+    <p>
+      Here are upcoming placement drives with deadlines in the next {{ days_ahead }} days:
+    </p>
+    <ul>
+      {% for drive in drives %}
+      <li>
+        <strong>{{ drive.job_title }}</strong> (Company ID: {{ drive.company_id }}) - Deadline:
+        {{ drive.deadline }}
+      </li>
+      {% endfor %}
+    </ul>
+    <p>Log in to the portal to apply before the deadline.</p>
+  </body>
+</html>
+
