@@ -1,0 +1,5 @@
+{
+  "name": "IITM Placement Portal",
+  "description": "A comprehensive placement management system for IIT Madras, featuring Admin, Company, and Student roles.",
+  "requestFramePermissions": []
+}
